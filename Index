@@ -1,0 +1,95 @@
+!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Resume Builder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Build Your Resume</h1>
+    </header>
+    <div class="container">
+        <h2>Personal Information</h2>
+        <form>
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone">
+
+            <h2>Education</h2>
+            <label for="university">University:</label>
+            <input type="text" id="university" name="university" required>
+
+            <label for="degree">Degree:</label>
+            <input type="text" id="degree" name="degree" required>
+
+            <label for="graduation-year">Graduation Year:</label>
+            <input type="text" id="graduation-year" name="graduation-year" required>
+
+            <h2>Experience</h2>
+            <label for="job-title">Job Title:</label>
+            <input type="text" id="job-title" name="job-title">
+
+            <label for="company">Company:</label>
+            <input type="text" id="company" name="company">
+
+            <label for="experience-description">Description:</label>
+            <textarea id="experience-description" name="experience-description"></textarea>
+
+            <button type="submit">Save Resume</button>
+        </form>
+    </div>
+</body>
+</html>
